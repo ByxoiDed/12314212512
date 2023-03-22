@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 150vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.text-information{
+  width: 40vw;
+  color: white;
+  font-size: 18px;
+  font-family: 'Alkatra', cursive;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.text-information_2{
+  width: 40vw;
+  color: white;
+  font-size: 18px;
+  font-family: 'Alkatra', cursive;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.background {
+  transform: translateZ(-10px) scale(2);
+}
+
+.foreground {
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.background,
+.foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+section {
+  font-size: 2rem;
+  padding: 2rem;
+  background-size: contain;
+  background-color: black;
+  background-position: center;
+  backdrop-filter: blur(10px);
+  color: white;
+  back
+}
